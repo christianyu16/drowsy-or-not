@@ -6,7 +6,7 @@ from PIL import Image
 # Load model
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("eye_cnn_model.h5")
+    model = tf.keras.models.load_model("drowsiness_cnn_model.h5")
     return model
 
 model = load_model()
